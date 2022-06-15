@@ -1,3 +1,6 @@
+body {
+    background-color: #333;
+}
 /* Header */
 #header {
     box-sizing: border-box;
@@ -63,10 +66,11 @@
 }
 .card1 {
     height: 14em;
-    width: 22em;
+    width: 23em;
     background-color: #eee;
     border-radius: 0.7em;
     transition: 0.5s;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.20);
 }
 
 .img-card1 {
@@ -75,9 +79,10 @@
     top: -10%;
     transform: translateX(-50%);
     height: 10em;
-    width: 12em;
+    width: 11em;
     background-color: #FFF;
     border-radius: 0.8em;
+    transition: 0.5s;
 }
 
 .img-card1 img {
@@ -89,10 +94,11 @@
 
 .card2 {
     height: 14em;
-    width: 22em;
+    width: 23em;
     background-color: #eee;
     border-radius: 0.7em;
     transition: 0.5s;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.20);
 }
 
 .img-card2 {
@@ -101,9 +107,10 @@
     top: -10%;
     transform: translateX(-50%);
     height: 10em;
-    width: 12em;
+    width: 11em;
     background-color: #FFF;
     border-radius: 0.8em;
+    transition: 0.5s;
 }
 
 .img-card2 img {
@@ -115,10 +122,11 @@
 
 .card3 {
     height: 14em;
-    width: 22em;
+    width: 23em;
     background-color: #eee;
     border-radius: 0.7em;
     transition: 0.5s;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.20);
 }
 
 .img-card3 {
@@ -127,9 +135,10 @@
     top: -10%;
     transform: translateX(-50%);
     height: 10em;
-    width: 12em;
+    width: 11em;
     background-color: #FFF;
     border-radius: 0.8em;
+    transition: 0.5s;
 }
 
 .img-card3 img {
@@ -139,6 +148,43 @@
     object-fit: cover;
 }
 
-.card1:hover,.card2:hover,.card3:hover {
-    height: 22em;
+.card1, .card2, .card3 {
+    font-family: sans-serif;
 }
+
+.card1:hover,.card2:hover,.card3:hover {
+    height: 25em;
+}
+
+.card1:hover .img-card1,.card2:hover .img-card2,.card3:hover .img-card3 {
+    height: 12em;
+    width: 13em;
+    transition: 0.5s;
+}
+
+.conteudo-card1 h3, .conteudo-card2 h3, .conteudo-card3 h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #000;
+}
+
+.conteudo-card1 h3 span, .conteudo-card2 h3 span, .conteudo-card3 h3 span{
+    color: #777;
+    font-size: 0.8em;
+}
+
+.container-cards {
+    transform: translateY(4em);
+}
+
+.texto-card1, .texto-card2, .texto-card3 {
+    visibility: hidden;
+}
+
+.texto-card1:hover, .texto-card2:hover, .texto-card3:hover {
+    visibility: visible;
+}
+
+/*
+<h2>Chame sua Turma <br> <span>Ao chamar seus amigos, você ganha um vale no valor de R$ 15,00</span> </h2>
+*/
