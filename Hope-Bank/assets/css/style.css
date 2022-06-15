@@ -1,0 +1,144 @@
+/* Header */
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(37, 36, 36);
+}
+  
+#menu {
+    display: flex;
+    gap: 0.5rem;
+}
+  
+#menu a {
+    display: block;
+    padding: 0.5em;
+}
+  
+#btn-mobile {
+    display: none;
+}
+
+#menu a {
+  color: white;
+  font-family: sans-serif;
+}
+
+#menu li a:hover {
+  border-bottom: 2px solid #0A3FFE;
+  transition: 0.3s;
+}
+
+#logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: white;
+  font-family: Sans-serif;
+}
+
+#btn-hopper {
+  border: none;
+  background-color: #0A3FFE;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+#btn-hopper a {
+    color: white;
+}
+
+/* Cards Vantagens */
+.container-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+.card1 {
+    height: 14em;
+    width: 22em;
+    background-color: #eee;
+    border-radius: 0.7em;
+    transition: 0.5s;
+}
+
+.img-card1 {
+    position: relative;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+    height: 10em;
+    width: 12em;
+    background-color: #FFF;
+    border-radius: 0.8em;
+}
+
+.img-card1 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card2 {
+    height: 14em;
+    width: 22em;
+    background-color: #eee;
+    border-radius: 0.7em;
+    transition: 0.5s;
+}
+
+.img-card2 {
+    position: relative;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+    height: 10em;
+    width: 12em;
+    background-color: #FFF;
+    border-radius: 0.8em;
+}
+
+.img-card2 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card3 {
+    height: 14em;
+    width: 22em;
+    background-color: #eee;
+    border-radius: 0.7em;
+    transition: 0.5s;
+}
+
+.img-card3 {
+    position: relative;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+    height: 10em;
+    width: 12em;
+    background-color: #FFF;
+    border-radius: 0.8em;
+}
+
+.img-card3 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card1:hover,.card2:hover,.card3:hover {
+    height: 22em;
+}
