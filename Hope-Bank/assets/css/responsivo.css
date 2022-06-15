@@ -1,6 +1,6 @@
 /* Inicio responsivo do Header */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #menu {
       display: block;
       position: absolute;
@@ -37,6 +37,7 @@
       background: none;
       cursor: pointer;
       gap: 0.5rem;
+      color: white;
     }
     #hamburger {
       border-top: 2px solid;
@@ -69,6 +70,25 @@
 
 /* Inicio responsivo do Vantagens */
 
-
+@media (max-width: 768px) {
+    .container-cards {
+      flex-wrap: wrap;
+    }
+    .card1, .card2, .card3 {
+      margin: 3em 2em 3em 2em;
+    }
+    .card1:hover, .card2:hover, .card3:hover {
+      position: relative;
+      margin: 3.5em 0 3.5em 0; 
+    }
+    .card1 .texto-card1, .card2 .texto-card2, .card3 .texto-card3 {
+      height: 14vh;
+    }
+    .card1 .texto-card1, .card2 .texto-card2, .card3 .texto-card3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+}
 
 /* Fim responsivo do Vantagens */

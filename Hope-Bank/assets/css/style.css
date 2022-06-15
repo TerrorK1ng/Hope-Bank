@@ -65,12 +65,21 @@ body {
     height: 90vh;
 }
 .card1 {
-    height: 14em;
+    height: 15em;
     width: 23em;
     background-color: #eee;
     border-radius: 0.7em;
     transition: 0.5s;
     box-shadow: 0 30px 70px rgba(0, 0, 0, 0.20);
+}
+
+.card1 .texto-card1, .card2 .texto-card2, .card3 .texto-card3 {
+    visibility: hidden;
+}
+
+.card1:hover .texto-card1, .card2:hover .texto-card2, .card3:hover .texto-card3{
+    visibility: visible;
+    transition-delay: 0.4s;
 }
 
 .img-card1 {
@@ -93,7 +102,7 @@ body {
 }
 
 .card2 {
-    height: 14em;
+    height: 15em;
     width: 23em;
     background-color: #eee;
     border-radius: 0.7em;
@@ -121,7 +130,7 @@ body {
 }
 
 .card3 {
-    height: 14em;
+    height: 15em;
     width: 23em;
     background-color: #eee;
     border-radius: 0.7em;
@@ -177,12 +186,27 @@ body {
     transform: translateY(4em);
 }
 
-.texto-card1, .texto-card2, .texto-card3 {
-    visibility: hidden;
+.texto-card1 p, .texto-card2 p, .texto-card3  p{
+    font-family: Arial;
+    font-size: 1.1em;
+    text-align: center;
+    margin: 1.8em 2.5em 1em 2.5em;
+    color: #000;
 }
 
-.texto-card1:hover, .texto-card2:hover, .texto-card3:hover {
-    visibility: visible;
+.btn-vantagens {
+    border: none;
+    background-color: #0A3FFE;
+    padding: 15px;
+    color: white;
+    font-family: Arial;
+    border-radius: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-vantagens:hover{
+    cursor: pointer;
 }
 
 /*
